@@ -49,7 +49,8 @@ def main():
 
     def load_model(model_file):
         response = requests.get(model_file)
-        model = pickle.loads(response.content)
+        model1 = pickle.loads(response.content)
+        model = pickle.load(open(model1, "rb"))
         return model
 
     if st.button("Predict"):
