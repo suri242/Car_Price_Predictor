@@ -48,7 +48,7 @@ def main():
                 return value
 
     def load_model(model_file):
-        response = requests.get(model_url)
+        response = requests.get(model_file)
         model = pickle.loads(response.content)
         return model
 
