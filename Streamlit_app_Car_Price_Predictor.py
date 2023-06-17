@@ -7,10 +7,10 @@ import pickle
 def main():
     # Categorical inputs
 
-    image = Image.open('C:\\Users\\Administrator\\PycharmProjects\\pythonProject\\suri-enterprises-pvt-ltd-logo.png')
+    # image = Image.open('C:\\Users\\Administrator\\PycharmProjects\\pythonProject\\suri-enterprises-pvt-ltd-logo.png')
     st.title("Car_Price_Predictor")
 
-    st.sidebar.image(image, caption=f"Suri Enterprises Pvt. Ltd.", use_column_width=True)
+    # st.sidebar.image(image, caption=f"Suri Enterprises Pvt. Ltd.", use_column_width=True)
     st.sidebar.subheader("Welcome to The Suri Enterprises Pvt. Ltd !")
 
     st.sidebar.subheader(
