@@ -3,7 +3,6 @@ import numpy as np
 from PIL import Image
 import pickle
 import requests
-from bs4 import BeautifulSoup
 
 def main():
     # Categorical inputs
@@ -50,8 +49,7 @@ def main():
 
     def load_model(model_file):
         response = requests.get(model_file)
-        model1 = BeautifulSoup(response.content,"lxml")
-        # model = pickle.load(open(model1, "rb"))
+        model = pickle.load(open(response, "rb"))
         return model
 
     if st.button("Predict"):
