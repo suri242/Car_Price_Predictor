@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import pickle
-
+import requests
 
 def main():
     # Categorical inputs
@@ -48,7 +48,8 @@ def main():
                 return value
 
     def load_model(model_file):
-        model = pickle.load(open(model_file, "rb"))
+        response = requests.get(model_url)
+        model = pickle.loads(response.content)
         return model
 
     if st.button("Predict"):
