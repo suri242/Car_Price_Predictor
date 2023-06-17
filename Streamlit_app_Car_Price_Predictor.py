@@ -59,8 +59,8 @@ def main():
         st.write(user_input_data)
         st.subheader("Predicted Selling Price")
         input_data = np.array(feature_list).reshape(1, -1)
-        loaded_model = pickle.load(open("final_model.pkl", "rb))
-        prediction = loaded_model.predict(input_data)
+        model = pickle.load(open("final_model.pkl", "rb))
+        prediction = model.predict(input_data)
         st.write("Predicted Selling Price :" + " " + "₹" + str(np.round(prediction[0], 2)))
 
         st.subheader(''' Thank you for your visit !''')
