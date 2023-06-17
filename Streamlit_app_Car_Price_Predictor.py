@@ -48,8 +48,7 @@ def main():
                 return value
 
     def load_model(model_file):
-        response = requests.get(model_file)
-        model = pickle.load(open(response, "rb"))
+        model = pickle.load(open(model_file, "rb"))
         return model
 
     if st.button("Predict"):
@@ -64,7 +63,7 @@ def main():
         st.write(user_input_data)
         st.subheader("Predicted Selling Price")
         input_data = np.array(feature_list).reshape(1, -1)
-        loaded_model = load_model("https://github.com/suri242/Car_Price_Predictor/blob/main/final_model.pkl")
+        loaded_model = load_model("final_model.pkl")
         prediction = loaded_model.predict(input_data)
         st.write("Predicted Selling Price :" + " " + "₹" + str(np.round(prediction[0], 2)))
 
