@@ -7,7 +7,7 @@ import requests
 def main():
     # Categorical inputs
 
-    image = Image.open('https://github.com/suri242/Car_Price_Predictor/blob/main/logo.png')
+    image = Image.open('logo.png')
     st.title("Car_Price_Predictor")
 
     # st.sidebar.image(image, caption=f"Suri Enterprises Pvt. Ltd.", use_column_width=True)
