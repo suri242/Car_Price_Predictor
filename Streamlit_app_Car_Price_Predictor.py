@@ -31,7 +31,7 @@ def main():
               "Jaguar": 18, "Mitsubishi": 19, "Land": 20,
               "Volvo": 21, "Ambassador": 22, "Jeep": 23, "MG": 24, "OpelCorsa": 25, "Daewoo": 26, "Force": 27,
               "Isuzu": 28, "Kia ": 29}
-    engine1 = {"Diesel": 1, "Patrol": 2, "CNG": 3, "LPG": 4}
+    engine1 = {"Diesel": 1, "Patrol": 2, "CNG": 3, "LPG": 4,"Electric": 5}
 
     name = st.text_input("Enter Car model Name")
     brand = st.selectbox("Brand", tuple(brand1.keys()))
