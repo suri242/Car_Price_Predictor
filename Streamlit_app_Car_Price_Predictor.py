@@ -10,7 +10,7 @@ def main():
     image = Image.open('logo.png')
     st.title("Car_Price_Predictor")
 
-    # st.sidebar.image(image, caption=f"Suri Enterprises Pvt. Ltd.", use_column_width=True)
+    st.sidebar.image(image, caption=f"Suri Enterprises Pvt. Ltd.", use_column_width=True)
     st.sidebar.subheader("Welcome to The Suri Enterprises Pvt. Ltd !")
 
     st.sidebar.subheader(
