@@ -12,7 +12,7 @@ def main():
 
     st.sidebar.image(image, caption=f"Suri Enterprises Pvt. Ltd.", use_column_width=True)
     st.sidebar.subheader("Welcome to The Suri Enterprises Pvt. Ltd !")
-
+    st.header("Ramotara")
     st.sidebar.subheader(
         "We rent and sales cars. This company is based on second hand or branded new cars. All the facility are available here.")
     st.sidebar.write("Ravi Ranjan ", "\n", "Chairman & CEO")
